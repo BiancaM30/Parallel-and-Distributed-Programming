@@ -1,0 +1,3 @@
+﻿  lab2_ppd_v2b_static.cpp
+C:\Facultate\Cursuri facultate sem 5\PPD\Labs\Teme\lab2-ok\C++\lab2_ppd_v2b_static\lab2_ppd_v2b_static\lab2_ppd_v2b_static.cpp(89,23): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  lab2_ppd_v2b_static.vcxproj -> C:\Facultate\Cursuri facultate sem 5\PPD\Labs\Teme\lab2-ok\C++\lab2_ppd_v2b_static\x64\Debug\lab2_ppd_v2b_static.exe
