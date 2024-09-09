@@ -21,13 +21,14 @@ This repository contains solutions to various lab problems focused on parallel a
 - **Languages**: C++11 with MPI.
 - **Testing**: Run tests for different digit lengths and analyze the time taken for the parallel addition.
 
-## Lab 4: Parallel QuickSort
-- **Problem**: Implement QuickSort in parallel using the fork-join framework in Java and pthreads in C++.
-- **Objective**: Speed up the sorting algorithm by splitting the array into sub-arrays that can be sorted concurrently by multiple threads.
-- **Key Concepts**: Fork-join parallelism, synchronization, task division.
+## Lab 4: Polynomial Addition Using Producer-Consumer Pattern
+- **Problem**: Add multiple polynomials using multithreading. Polynomials are represented as linked lists of monomials, and a queue is used to manage monomials. One thread reads monomials and adds them to the queue, while worker threads consume them, updating the result polynomial. Synchronization is performed at the node level of the linked list.
+- **Objective**: Understand and implement the producer-consumer pattern and synchronization.
+- **Language**: Java or C++
+- **Performance Analysis**: Compare sequential and parallel implementations for various polynomials of different sizes.
 
-## Lab 5: Distributed Data Processing using Hadoop MapReduce
-- **Problem**: Use Hadoop MapReduce to process a large dataset in a distributed manner.
-- **Objective**: Implement a word count algorithm and analyze large datasets by distributing the computation across a Hadoop cluster.
-- **Tools**: Hadoop framework.
-- **Key Concepts**: Distributed computing, MapReduce paradigm, data locality.
+## Lab 5: Enhanced Producer-Consumer with Locking at Node Level
+  - **Objective**: Enhance the producer-consumer pattern with fine-grained synchronization.
+  - **Problem**: Modify the solution from Lab 4 to use two types of threads: readers and workers. Synchronization between the reader and worker threads is implemented using wait/notify, and node-level locks are used for the linked list. If a node has a zero coefficient, it is removed from the list.
+  - **Language**: Java or C++
+  - **Performance Analysis**: Compare the performance of the sequential solution and parallel solutions for different thread counts and configurations.
